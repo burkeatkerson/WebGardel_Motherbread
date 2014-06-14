@@ -1,0 +1,420 @@
+  {
+    "_data": {
+       "company_id": 			"use_[region_+_domain]_in_naming_structure",
+		"primary_contact": 	"Sample_Data_01",
+		"primary_email":		"primary@email.com",
+		"has_fb_page" :		true ,
+		"opt_mail_pointing": 	true 
+    },
+    "data":{
+        "company_name": {
+            "friendly": 		"Company Name / Nombre de negocio",
+            "help": 			"This is the name of your company",
+            "value": 			"Tu Negocio Nuevo"
+        },
+        "domain_name": {
+            "friendly": 		"Domain Name / Dominio",
+            "help": 			"This is the domain name of your website",
+            "value": 			"www.tuPropioDominio.com"
+        },
+        "fb_page_url": {
+            "friendly": 		"Facebook page url",
+            "help": 			"This is the facebook page for the company. Facebook.com/... ",
+            "value": 			"https://www.facebook.com/DulceriaDeXime"
+        },
+        "address": {
+            "friendly": 		"Addreess / Direccion y esquina",
+            "help": 			"This is the primary business adress",
+            "value": 			"Av Brasil 1490, apt 901"
+        },
+        "address2": {
+            "friendly": 		"City, state, zip, country / ciudad, barrio, departamento, numero, pais",
+            "help": 			"This is 2nd address line",
+            "value": 			"Montevideo, Uruguay 11300"
+        },
+        "business_phone": {
+            "friendly": 		"Business phone / telefono de negocio",
+            "help": 			"This is the business phone number",
+            "value": 			"210-093-389"
+        },
+        "cell_phone": {
+            "friendly": 		"Cell phone / telefono celular",
+            "help": 			"This is a personal cellphone number",
+            "value": 			"098-093-339"
+        },
+        "fax": {
+            "friendly": 		"Fax / numero de fax",
+            "help": 			"This is the business fax number",
+            "value":		 	"091-493-217"
+        },
+        "business_email": {
+            "friendly": 		"Business email / mail para el negocio",
+            "help": 			"This is the business email",
+            "value": 			"info@webgardel.com"
+        },
+        "gmaps_embed_url": {
+            "friendly": 		"Google maps embed URL",
+            "help": 			"Only paste the url in the iframe not the entire code",
+            "value": 			"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209628.53747369067!2d-56.23030675000001!3d-34.819879849999936!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevideo!5e0!3m2!1sen!2s!4v1402342823659"
+        },
+		
+		
+		
+		
+		
+		
+		
+        "fb_id": {
+            "friendly": 		"Facebook page id",
+            "help": 			"This is the facebook page id number. Automate or use http://findmyfacebookid.com/",
+            "value": 			"272676249498497"
+        },
+        "fb_public": {
+            "friendly": 		"Facebook page set to public",
+            "help": 			"Is this page set to public so the feed can show in website?",
+            "value": 			true
+        },
+        "prof_pic_src": {
+            "friendly": 		"Profile Photo",
+            "help": 			"This is the url of the profile photo",
+            "value": 			"http://webgardel.com/demo2/wp-content/uploads/2014/05/logo_display.jpg"
+        },
+        "cover_photo1": {
+            "friendly": 		"Primary Cover Photo",
+            "help": 			"This is the url of the primary cover photo",
+            "value": 			"http://webgardel.com/demo2/wp-content/uploads/2014/05/header01.jpg"
+        },
+        "cover_photo2": {
+            "friendly": 		"Second Cover Photo",
+            "help": 			"This is the url of the second cover photo",
+            "value": 			"http://webgardel.com/demo2/wp-content/uploads/2014/05/header02.jpg"
+        },
+        "cover_photo3": {
+            "friendly": 		"Third Cover Photo",
+            "help": 			"This is the url of the third cover photo",
+            "value": 			"http://webgardel.com/demo2/wp-content/uploads/2014/05/header03.jpg"
+        },
+        "price_range": {
+            "friendly": 		"General price range",
+            "help": 			"This is the price range imported from facebook",
+            "value": 			"$$ (10-30)"
+        },
+        "product_list": {
+            "friendly": 		"Third Cover Photo",
+            "help": 			"This is the price range imported from facebook",
+            "value": 			"Gastronomia internacional y montevideana. Especialidad en chivitos, pizzetas y postres."
+        }
+    },
+	
+	
+
+	
+	
+	
+	
+	
+	
+	
+	
+    "content":{
+        "mission": {
+            "friendly": 		"Short Description",
+            "help": 			"Vision or Mission statement",
+            "value": 			"Nuestro Mission: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque felis non nisl ultrices eu consectetur dolor suscipit."
+        },
+        "about": {
+            "friendly": 		"About me / Nosotros",
+            "help": 			"Vision or Mission statement",
+            "value": 			"Nosotros: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque felis non nisl ultrices eu consectetur dolor suscipit."
+        },
+        "short_description": {
+            "friendly": 		"Short description",
+            "help": 			"Short Business description",
+            "value": 			"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque felis non nisl ultrices eu <a href=\"#\">consectetur</a> dolor suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque felis non nisl ultrices eu consectetur dolor suscipit.</p>"
+        },
+        "long_description": {
+            "friendly": 		"Long description / historia",
+            "help": 			"Business description (our brief story. 1 paragraph) / Nosotros",
+            "value": 			"<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque felis non nisl ultrices eu dolor suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque felis non nisl ultrices eu consectetur dolor suscipit.</p>"
+        },
+        "slogan_text": {
+            "friendly": 		"Slogan",
+            "help": 			"These is the business slogan / Slogan del negocio(10-12 words)",
+            "value": 			"Tu slogan buenisimo"
+        },
+        "extra_text": {
+            "friendly": 		"Extra text ",
+            "help": 			"This is an extra text box in case the user wants to add some extra information",
+            "value": 			"Text flexible. If you need extra info on your page or perhaps a welcome text, hereitis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque felis non nisl ultrices eu consectetur dolor suscipit."
+        },
+        "extra_text_headline": {
+            "friendly": 		"Welcome text Title",
+            "help": 			"This is the title for the extra text box",
+            "value": 			"Extra Title"
+        },
+        "hours_mon": {
+            "friendly": 		"Monday open hours",
+            "help": 			"El horario general de lunes",
+            "value": 			"10:00 - 16:00"
+        },
+        "hours_tue": {
+            "friendly": 		"Tuesday open hours",
+            "help": 			"El horario general de martes",
+            "value": 			"10:00 - 16:00"
+        },
+        "hours_wed": {
+            "friendly": 		"Wednesday open hours",
+            "help": 			"El horario general de miercoles",
+            "value": 			"10:00 - 16:00"
+        },
+        "hours_thu": {
+            "friendly": 		"Thurs open hours",
+            "help": 			"El horario general de jueves",
+            "value": 			"10:00 - 16:00"
+        },
+        "hours_fri": {
+            "friendly": 		"Friday open hours",
+            "help": 			"El horario general de viernes",
+            "value": 			"10:00 - 16:00"
+        },
+        "hours_sat": {
+            "friendly": 		"Saturday open hours",
+            "help": 			"El horario general de sab",
+            "value": 			"10:00 - 16:00"
+        },
+        "hours_sun": {
+            "friendly": 		"Sunday open hours",
+            "help": 			"El horario general de domingo",
+            "value": 			"10:00 - 16:00"
+        },
+        "cta_headline": {
+            "friendly": 		"Call-to-action headline",
+            "help": 			"These are your open hours",
+            "value": 			"Lporiem epsum text."
+        },
+        "cta_lead": {
+            "friendly": 		"Call-to-action lead",
+            "help": 			"This is the lead text describing the unique value proposition",
+            "value": 			"Latin text description of the call to action!"
+        },
+        "cta_hero": {
+            "friendly": 		"Call-to-action hero shot",
+            "help": 			"This is the image url for the call-to-action",
+            "value": 			"http://webgardel.com/img/logo.png"
+        },
+        "cta_button": {
+            "friendly": 		"Call-to-action button",
+            "help": 			"This is the official call-to-action button",
+            "value": 			"Tengo interes"
+        },
+        "cta_email": {
+            "friendly": 		"Call-to-action email",
+            "help": 			"This is the email address that the form will be sent to",
+            "value": 			"info@webgardel.com"
+        },
+        "footer_left": {
+            "friendly": 		"Footer left",
+            "help": 			"The footer at the bottom left of the page",
+            "value": 			"Copyright 2014. All rights reserved."
+        },
+        "footer_right": {
+            "friendly": 		"Footer right",
+            "help":		 	"The footer at the bottom right of the page",
+            "value": 			"Powered by www.WebGardel.com"
+        }
+    },
+	
+	
+	
+	
+    "option":{
+        "theme": {
+            "friendly": 		"Theme",
+            "help": 			"This is the theme (and version) the customer has chosen",
+            "value": 			"antiguo_0.9.1"
+        },
+        "color": {
+            "friendly": 		"Primary accent color option",
+            "help": 			"The customer has chosen this accent color",
+            "value": 			"#666666"
+        },
+        "color_scheme": {
+            "friendly": 		"Color scheme option",
+            "help": 			"Here is shows which color scheme preference they chose",
+            "value": 			"light"
+        },
+        "font_family": {
+            "friendly": 		"Font family option",
+            "help": 			"Here it shows what they chose between the font_family options we gave them.",
+            "value": 			"#333333"
+        },
+        "photo_section_title": {
+            "friendly": 		"Fotos o Productos",
+            "help": 			"Here it draws in the names of the ablums as categories.",
+            "value": 			"Fotos"
+        },
+        "primary_language": {
+            "friendly": 		"Primary Language option",
+            "help": 			"Here it shows what they chose as rimary language.",
+            "value": 			"es"
+        }
+    },
+	
+
+	
+	
+	
+	
+	
+    "sections":{
+        "header": {
+            "friendly": 		"Header",
+            "help": 			"This determines of if you want the header section to show",
+            "value": 			true
+        },
+        "about_us": {
+            "friendly": 		"Nosotros",
+            "help": 			"This determines of if you want the About Us section to show",
+            "value": 			true
+        },
+        "photos": {
+            "friendly": 		"Photos or products / fotos o productos",
+            "help": 			"This determines of if you want the photos section to show",
+            "value": 			true
+        },
+        "news": {
+            "friendly": 		"News / Novedades",
+            "help": 			"This determines of if you want the news and updates section to show usually from the facebook timeline",
+            "value": 			true
+        },
+        "contact": {
+            "friendly": 		"Contact / contacto",
+            "help": 			"This determines of if you want the Contact Us section to show",
+            "value": 			true
+        },
+        "footer": {
+            "friendly": 		"Footer",
+            "help": 			"This determines of if you want the footer section to show",
+            "value": 			true
+        },
+        "footer_widgets": {
+            "friendly": 		"Footer widget area for modules",
+            "help": 			"This determines of if you want the footer widgets section to show",
+            "value": 			true
+        },
+        "sidebar_widgets": {
+            "friendly": 		"Sidebar widgets area for modules",
+            "help": 			"This determines of if you want the sidebar widgets section to show",
+            "value": 			true
+        }
+    },
+	
+		
+		
+		
+		
+	
+	
+    "module":{
+		"header_navigation": {
+            "friendly": 		"Main menu",
+            "help": 			"This determines of if you want the menu section to show",
+            "value": 			true
+        },
+        "business_name": {
+            "friendly": 		"Business name / nombre de negocio",
+            "help": 			"This determines of if you want the business name to show",
+            "value": 			true
+        },
+        "slogan": {
+            "friendly": 		"Slogan",
+            "help": 			"This determines of if you want the slogan to show",
+            "value": 			true
+        },
+        "cover_photo": {
+            "friendly": 		"Cover photo / portada foto",
+            "help": 			"This determines of if you want the main cover photo section to show",
+            "value": 			true
+        },
+        "profile_photo": {
+            "friendly": 		"Profile photo / foto de perfi",
+            "help": 			"This determines of if you want the header section to show",
+            "value": 			true
+        },
+        "hours": {
+            "friendly": 		"Business Hours / horario",
+            "help": 			"This determines of if you want the open hours section to show",
+            "value": 			true
+        },
+        "contact_info": {
+            "friendly": 		"Contact info/ info de contacto",
+            "help": 			"This determines of if you want the contact info section to show",
+            "value": 			true
+        },
+        "address": {
+            "friendly": 		"Address / direccion",
+            "help": 			"This determines of if you want the address section to show",
+            "value": 			true
+        },
+        "map": {
+            "friendly": 		"Google Map / mapa",
+            "help": 			"This determines of if you want the google map to show",
+            "value": 			true
+        },
+        "more_info": {
+            "friendly": 		"More info / mas info",
+            "help": 			"This determines of if you want the more info section to show",
+            "value": 			true
+        },
+        "call_to_action": {
+            "friendly": 		"Call to action / invitacion para interactuar",
+            "help": 			"This determines of if you want the call-to-action section to show",
+            "value": 			true
+        },
+        "services": {
+            "friendly": 		"Services / servicios",
+            "help": 			"This determines of if you want the services section to show",
+            "value": 			true
+        },
+        "fb_likebutton": {
+            "friendly": 		"Like button / me gusta",
+            "help": 			"This determines of if you want the facebook like button to show",
+            "value": 			true
+        },
+        "fb_followbutton": {
+            "friendly": 		"Follow button / sequir",
+            "help": 			"This determines of if you want the facebook follow button to show",
+            "value": 			true
+        },
+        "fb_sharebutton": {
+            "friendly": 		"Share button / compartir",
+            "help": 			"This determines of if you want the facebook share button to show",
+            "value": 			true
+        },
+        "fb_likebox": {
+            "friendly": 		"likebox / me gusta cuadro",
+            "help": 			"This determines of if you want the facebook likebox to show",
+            "value": 			true
+        },
+        "fb_timeline": {
+            "friendly": 		"Timeline / muro",
+            "help": 			"This determines of if you want the facebook timeline to show",
+            "value": 			true
+        },
+        "fb_comments": {
+            "friendly": 		"Comments / comentarios",
+            "help": 			"This determines of if you want the facebook comments section to show",
+            "value": 			true
+        },
+        "pricing_tables": {
+            "friendly": 		"Pricing tables / precios de productos",
+            "help": 			"This determines of if you want the price tables section to show",
+            "value": 			true
+        },
+        "contact_form": {
+            "friendly": 		"Contact form / formulario de contact",
+            "help": 			"This determines of if you want the contact form to show",
+            "value": 			true
+        }
+    }
+}
