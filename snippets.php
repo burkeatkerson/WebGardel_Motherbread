@@ -7,6 +7,10 @@
 	
 ?>
 
+<!-- Paste after the closed head tag before body tag fpr fbFeed plugin -->
+<?php $fbfeed_path = 'fbfeed';
+include $fbfeed_path . '/fbfeed-settings.php'; ?>
+
 
 <!-- Facebook, Maps, Menus FUNCTIONALITY & strings - paste right after the body tag -->
 <? //Webgardel theme functionality ?>
@@ -60,6 +64,9 @@ $menu_item8 = '<a href="'.$site->data('fb_page_url').'" target="_blank">'.$menu_
 <? //end Webgardel theme functionality ?>
 
 
+<!-- Paste at end for fbFeed plugin -->
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script type="text/javascript" src="<?php echo $fbfeed_path ?>/core/js/cff.js"></script>
 
 
 
@@ -84,7 +91,8 @@ $menu_item8 = '<a href="'.$site->data('fb_page_url').'" target="_blank">'.$menu_
 <? echo $fb_sharebutton_horiz; ?>
 <? echo $fb_comments; ?>
 <? echo $fb_likebox; ?>
-<? echo $fb_timeline; //facebook feed, nodevades, MURO, timeline ?>  ?>
+<? echo $fb_timeline; //facebook feed, nodevades, MURO, using socoaltimeline Plugin ?>
+<? fbFeed($settings); //facebook feed, nodevades, MURO, timeline using fbFeedPlugin ?>  
 
 
 

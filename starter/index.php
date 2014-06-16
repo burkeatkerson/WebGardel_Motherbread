@@ -1,3 +1,5 @@
+<!-- WebGardel Theme : Name_goes_here -->
+
 <?php
     include_once('sbwebsite.php');
     $site = new SBWebsite();
@@ -24,6 +26,8 @@
 
 
 </head>
+<?php $fbfeed_path = 'fbfeed';
+include $fbfeed_path . '/fbfeed-settings.php'; ?>
 <body class="wide">
 <? //Webgardel theme functionality ?>
 <div id="fb-root"></div>
