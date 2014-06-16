@@ -14,7 +14,6 @@ include $fbfeed_path . '/fbfeed-settings.php'; ?>
 
 <!-- Facebook, Maps, Menus FUNCTIONALITY & strings - paste right after the body tag -->
 <? //Webgardel theme functionality ?>
-<div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -29,14 +28,14 @@ $('#cff .cff-item').each(function(){
   $cffphoto.detach();
   $self.find('.cff-post-text').before($cffphoto);
 });</script>
-<? $fb_likebutton = '<div class="fb-like" data-href='.$site->data('fb_page_url').'"  data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>'; 
+<? $fb_likebutton = '<div class="fb-like" data-href="'.$site->data('fb_page_url').'"  data-layout="button" data-action="like" data-show-faces="true" data-share="false"></div>'; 
 $fb_followbox_standard = '<div class="fb-follow" data-href="'.$site->data('fb_page_url').'" data-width="250" data-height="250" data-colorscheme="light" data-layout="standard" data-show-faces="true"></div>';
 $fb_followbutton = '<div class="fb-follow" data-href="'.$site->data('fb_page_url').'" data-width="250" data-height="250" data-colorscheme="light" data-layout="button_count" data-show-faces="true"></div>';
 $fb_sharebutton_box_small = '<div class="fb-share-button" data-href="'.$site->data('fb_page_url').'" data-type="box_count"></div>';
 $fb_sharebutton = '<div class="fb-share-button" data-href="'.$site->data('fb_page_url').'" data-type="button"></div>'; 
 $fb_sharebutton_horiz = '<div class="fb-share-button" data-href="'.$site->data('fb_page_url').'" data-type="button_count"></div>';
 $fb_comments = '<div class="fb-comments" data-href="http://www.facebook.com/webgardel" data-width="590" data-numposts="12" data-colorscheme="light"></div>';
-$fb_likebox = '<div class="fb-like-box" data-href="'.$site->data('fb_page_url').'" data-width="300" data-height="450" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>';
+$fb_likebox = '<div class="fb-like-box" data-href="'.$site->data('fb_page_url').'" data-width="300" data-height="600" data-colorscheme="light" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false"></div>';
 $gmaps_iframe = '<iframe src="'.$site->data('gmaps_embed_url').'" width="100%" height="100%" frameborder="0" style="border:0;"></iframe>';
 $menu_li_1 = 'inicio';
 $menu_li_2 = 'nosotros';
@@ -60,8 +59,20 @@ $menu_item5 = '<a href="#'.$menu_li_5.'">'.$menu_li_5.'</a>';
 $menu_item6 = '<a href="#'.$menu_li_6.'">'.$menu_li_6.'</a>';
 $menu_item7 = '<a href="#'.$menu_li_7.'">'.$menu_li_7.'</a>';
 $menu_item8 = '<a href="'.$site->data('fb_page_url').'" target="_blank">'.$menu_li_8.'</a>';
-?>
-<? //end Webgardel theme functionality ?>
+
+$fb_prof_pic = '<img src="http://graph.facebook.com/'. $site->data('fb_id') .'/picture?type=large" style="max-width:150px; max-height:120px; border-radius:15px;"/></a>';
+
+$albumid = '281475991951856';
+$contents = file_get_contents('http://graph.facebook.com//photos/uploaded?limit=12');
+$photos = json_decode($contents,true);
+$photos = $photos['data'];
+
+$get_fb_photo_cover = file_get_contents('https://graph.facebook.com/'.$site->data('fb_id').'?fields=cover');
+$decode_photo_cover = json_decode($get_fb_photo_cover);
+$cover_image = $decode_photo_cover->cover ->source;
+$fb_cover_photo = '<div style="max-height:400px; overflow:hidden;"><img class="rsImg" src="'.$cover_image.'" alt="'.$site->data('company_name').'" /></div>'
+
+//end Webgardel theme functionality ?>
 
 
 <!-- Paste at end for fbFeed plugin -->
@@ -108,10 +119,6 @@ $menu_item8 = '<a href="'.$site->data('fb_page_url').'" target="_blank">'.$menu_
 <?= $site->data('business_email') ?>
 <?= $site->data('gmaps_embed_url') ?>
 <?= $site->data('fb_id') ?>
-<?= $site->data('prof_pic_src') ?>
-<?= $site->data('cover_photo1') ?>
-<?= $site->data('cover_photo2') ?>
-<?= $site->data('cover_photo3') ?>
 <?= $site->data('product_list') ?>
 <?= $site->data('price_range') ?>
 
