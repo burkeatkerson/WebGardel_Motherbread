@@ -60,17 +60,19 @@ $menu_item6 = '<a href="#'.$menu_li_6.'">'.$menu_li_6.'</a>';
 $menu_item7 = '<a href="#'.$menu_li_7.'">'.$menu_li_7.'</a>';
 $menu_item8 = '<a href="'.$site->data('fb_page_url').'" target="_blank">'.$menu_li_8.'</a>';
 
-$fb_prof_pic = '<img src="http://graph.facebook.com/'. $site->data('fb_id') .'/picture?type=large" style="max-width:150px; max-height:120px; border-radius:15px;"/></a>';
+$fb_prof_pic = '<img src="http://graph.facebook.com/'. $site->data('fb_id') .'/picture?type=large" style="max-width:150px; max-height:120px; border-radius:15px;"/>';
+$fb_prof_pic_small = '<img src="http://graph.facebook.com/'. $site->data('fb_id') .'/picture" style="border-radius:5px; float:left; margin:5px 15px 5px 0;"/>';
 
-$albumid = '281475991951856';
-$contents = file_get_contents('http://graph.facebook.com//photos/uploaded?limit=12');
+$albumid = '281475991951856'; //if want a specific album
+$contents = file_get_contents('http://graph.facebook.com/'.$site->data('fb_id').'/photos/uploaded?limit=12');
 $photos = json_decode($contents,true);
 $photos = $photos['data'];
 
 $get_fb_photo_cover = file_get_contents('https://graph.facebook.com/'.$site->data('fb_id').'?fields=cover');
 $decode_photo_cover = json_decode($get_fb_photo_cover);
 $cover_image = $decode_photo_cover->cover ->source;
-$fb_cover_photo = '<div style="max-height:400px; overflow:hidden;"><img class="rsImg" src="'.$cover_image.'" alt="'.$site->data('company_name').'" /></div>'
+$fb_cover_photo = '<div style="max-height:500px; overflow:hidden;"><img class="rsImg" src="'.$cover_image.'" alt="'.$site->data('company_name').'" /></div>';
+
 
 //end Webgardel theme functionality ?>
 
@@ -94,6 +96,9 @@ $fb_cover_photo = '<div style="max-height:400px; overflow:hidden;"><img class="r
 
 
 <!-- Copy and paste specifically where you want the FACEBOOK WIDGET to show up -->
+<? echo $fb_prof_pic ?>
+<? echo $fb_prof_pic_small ?>
+<? echo $fb_cover_photo ?>
 <? echo $fb_likebutton; ?>
 <? echo $fb_followbox_standard; ?>
 <? echo $fb_followbutton; ?>
@@ -148,8 +153,7 @@ $fb_cover_photo = '<div style="max-height:400px; overflow:hidden;"><img class="r
 <?= $site->content('cta_hero') ?>
 <?= $site->content('cta_button') ?>
 <?= $site->content('cta_email') ?>
-<?= $site->content('footer_left') ?>
-<?= $site->content('footer_right') ?>
+<?= $site->content('custom_footer') ?>
 
 
 
