@@ -1,0 +1,66 @@
+{
+    "_data": {
+        "company_id": "some-id-thing"
+    },
+    "data":{
+        "company_name": {
+            "friendly": "Company Name",
+            "help": "This is the name of your company",
+            "value": "Negocio Gardel"
+        },
+        "address": {
+            "friendly": "Address",
+            "help": "Your Address",
+            "value": "1620 SE Cesar E Chavez, Portland, OR 97214"
+        }
+    },
+    "content":{
+        "intro_text": {
+            "friendly": "Introduction Text",
+            "help": "This is the introduction text",
+            "value": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque felis non nisl ultrices eu consectetur dolor suscipit."
+        },
+        "hours": {
+            "friendly": "Business Hours",
+            "help": "These are your business hours",
+            "value": "<strong>Mon-Fri</strong><br/>10am - 1am<br/><strong>Sat-Sun</strong><br/>12pm - 9pm<br/><br/>"
+        },
+        "about_us": {
+            "friendly": "About US",
+            "help": "About You",
+            "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pellentesque felis non nisl ultrices eu <a href=\"#\">consectetur</a> dolor suscipit.</p>"
+        },
+        "footer": {
+            "friendly": "Footer",
+            "help": "The footer at the bottom of the page",
+            "value": "Copyright 2014 - Web Gardel"
+        }
+    },
+    "sections":{
+        "header": {
+            "friendly": "Header",
+            "help": "This determines of if you want the header section to show",
+            "value": true
+        },
+        "hours": {
+            "friendly": "Business Hours",
+            "help": "These are your business hours",
+            "value": true
+        },
+        "map": {
+            "friendly": "Business Map",
+            "help": "This is the map to your business",
+            "value": true
+        },
+        "about_us": {
+            "friendly": "About Us",
+            "help": "The About Us section",
+            "value": true
+        },
+        "footer": {
+            "friendly": "Footer",
+            "help": "The footer at the bottom of the page",
+            "value": true
+        }
+    }
+}
