@@ -1,13 +1,23 @@
 <!--  Snippets for converting a template into a WebGardel theme -->
 
-<!-- Paste at the very top of the index page -->
-<?php
+<!-- Paste lines 4-28 at the very top of the index page through the title tag-->
+<!-- WebGardel Theme : _____theme name__________ -->
+<?php //webgardel framework files
+    include_once('wg_TDK.php');
     include_once('sbwebsite.php');
-    $site = new SBWebsite();	
+    $site = new SBWebsite();
+	$fbfeed_path = 'assets/plugins/fbfeed';
+	include $fbfeed_path . '/fbfeed-settings.php'; 
 ?>
-
-
-<!-- Paste in the head section over the Title tag -->
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title><?= $site->data('company_name') ?></title>
     <? //Meta tags for Facebook, sharing, and SEO ?>
     <meta property="og:title" content="<?= $site->data('company_name') ?> <?= $site->data('slogan_text') ?>"/>
@@ -17,13 +27,12 @@
 	<meta property="og:description" content="<? echo $site->content('long_description') ?>"/>
     <meta name="description" content="<?= $site->data('short_description') ?>">
 
-<!-- Paste after the closed head tag before body tag fpr fbFeed plugin -->
-<?php $fbfeed_path = 'fbfeed';
-include $fbfeed_path . '/fbfeed-settings.php'; ?>
+
+
+
 
 
 <!-- Facebook, Maps, Menus FUNCTIONALITY & strings - paste right after the body tag -->
-<? //Webgardel theme functionality ?>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
@@ -38,13 +47,6 @@ $('#cff .cff-item').each(function(){
   $cffphoto.detach();
   $self.find('.cff-post-text').before($cffphoto);
 });</script>
-<? 
-
-$fb_cover_photo = '<div style="max-height:500px; overflow:hidden;"><img class="rsImg" src="'.$cover_image.'" alt="'.$site->data('company_name').'" /></div>';
-
-
-//end Webgardel theme functionality ?>
-
 
 <!-- Paste at end for fbFeed plugin -->
 <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
@@ -61,10 +63,14 @@ $fb_cover_photo = '<div style="max-height:500px; overflow:hidden;"><img class="r
 <? echo $menu_item5; ?>
 <? echo $menu_item6; ?>
 <? echo $menu_item7; ?>
-<? echo $menu_item8; ?>
+<? echo $menu_item_li; //don't forget the ul or ol tags before and after ?>
 
 
 <!-- Copy and paste specifically where you want the FACEBOOK WIDGET to show up -->
+<? echo $fb_widget['prof_pic']; ?>
+<? echo $fb_widget['prof_pic_small']; ?>
+<? echo $fb_widget['prof_pic_custom']; ?>
+<? echo $fb_widget['cover_photo']; ?>
 <? echo $fb_widget['likebutton']; ?>
 <? echo $fb_widget['followbox_standard']; ?>
 <? echo $fb_widget['followbutton']; ?>
@@ -74,9 +80,6 @@ $fb_cover_photo = '<div style="max-height:500px; overflow:hidden;"><img class="r
 <? echo $fb_widget['comments']; ?>
 <? echo $fb_widget['likebox']; ?>
 <? echo $fb_widget['likebox_tall']; ?>
-<? echo $fb_widget['prof_pic']; ?>
-<? echo $fb_widget['prof_pic_small']; ?>
-<? echo $fb_widget['cover_photo']; ?>
 
 <? echo $fb_timeline; //facebook feed, nodevades, MURO, using socoaltimeline Plugin ?>
 <? fbFeed($settings); //facebook feed, nodevades, MURO, timeline using fbFeedPlugin ?>  
