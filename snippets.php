@@ -230,4 +230,22 @@ $('#cff .cff-item').each(function(){
 
 
 
+<!-- Copy and paste for optional if DATA -->
+<? $business_phone = $site->data('business_phone');
+	if ($business_phone){
+		echo 'Teléfono: <strong>'.$business_phone.'</strong><br>';
+	} ?> 
+<? $cell_phone = $site->data('cell_phone');
+	if ($cell_phone){
+		echo 'Celular: <strong>'.$cell_phone.'</strong><br>';
+	} ?> 
+<? $fax = $site->data('fax');
+	if ($fax){
+		echo 'Fax: <strong>'.$fax.'</strong><br>';
+	} ?> 
+<? $business_email = $site->data('business_email');
+	if ($business_email){
+		echo 'Mail: <strong><a href="#contacto">'.$business_email.'</a></strong>';
+	} ?> 
+
 
