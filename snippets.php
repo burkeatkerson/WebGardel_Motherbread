@@ -69,7 +69,7 @@ $('#cff .cff-item').each(function(){
 <!-- Copy and paste specifically where you want the FACEBOOK WIDGET to show up -->
 <? echo $fb_widget['prof_pic']; ?>
 <? echo $fb_widget['prof_pic_small']; ?>
-<? echo $fb_widget['prof_pic_custom']; ?>
+<? echo $fb_widget['prof_pic_custom']; //does not have tag open <img href= or close > just starts with "href://..." ?>
 <? echo $fb_widget['cover_photo']; ?>
 <? echo $fb_widget['likebutton']; ?>
 <? echo $fb_widget['followbox_standard']; ?>
@@ -81,8 +81,9 @@ $('#cff .cff-item').each(function(){
 <? echo $fb_widget['likebox']; ?>
 <? echo $fb_widget['likebox_tall']; ?>
 
-<? echo $fb_timeline; //facebook feed, nodevades, MURO, using socoaltimeline Plugin ?>
 <? fbFeed($settings); //facebook feed, nodevades, MURO, timeline using fbFeedPlugin ?>  
+<? echo $fb_timeline; //facebook feed, nodevades, MURO, using socoaltimeline Plugin ?>
+
 
 
 
@@ -172,8 +173,9 @@ $('#cff .cff-item').each(function(){
 <?php if( $site->module('slogan') ){ //begin slogan module ?>
 <?php } //end slogan module?>
             
-<?php if( $site->module('cover_photo') ){ //begin cover_photo module  ?>
-<?php } //end cover_photo module?>
+<?php if( $site->module('cover_photo') ){  //begin slogan module ?
+		if( $cover_image ) { //if they have a cover photo on fb ?>
+<?php } } //end cover_photo module?>
             
 <?php if( $site->module('profile_photo') ){ //begin profile_photo module  ?>
 <?php } //end profile_photo module?>
@@ -217,7 +219,8 @@ $('#cff .cff-item').each(function(){
 <?php if( $site->module('fb_timeline') ){ //begin fb_timeline module  ?>
 <?php } //end fb_timeline module?>
             
-<?php if( $site->module('fb_comments') ){ //begin fb_comments module  ?>
+<?php if( $site->module('fb_comments') ){ //begin fb_comments module  
+ echo $fb_widget['comments']; ?>
 <?php } //end fb_comments module?>
             
 <?php if( $site->module('pricing_tables') ){ //begin pricing_tables module  ?>
